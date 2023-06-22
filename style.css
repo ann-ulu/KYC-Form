@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #181719;
+    color:white ;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+.nav__bar{
+    background-color: #181719;
+}
+
+.nav__bar_container{
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding:0 90px ;
+}
+
+.logo{
+    padding: .5rem 1rem;
+font-size:  0.875rem ;
+border: 1px solid;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav_item{
+    display: flex;
+}
+
+
+.nav_item li a{
+    display: block;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1.2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+    .nav_item li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: white;
+        margin: auto;
+    display: block;
+    }
+    
+    .nav_item li a:hover::after{
+        width: 100%;
+        transition: width 0.3s linear;
+    }
+
+/*hero section*/
+
+.hero_section{
+    background-color: #181719;
+    margin-top: 5rem;
+}
+
+.hero_container{
+    
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+    
+   
+}
+
+.imageit{
+    width: 100%;
+   
+}
+
+
+
+.left h3{
+    font-size: 3rem;
+    font-weight: 500px;
+    font-family: 'Lora', serif;
+    padding: 0 1rem 2rem 0;
+}
+
+.left p{
+    font-size: 1.3rem;
+    width: 60%;
+  text-align: left;
+  padding-bottom: 2.5rem;
+}
+
+.left h6{
+    font-size: 1rem;
+}
+
+.right{
+   
+}
+
+
+/*small section*/
+
+.give{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.groupit{
+    background-color: red;
+    width: fit-content; 
+ 
+  
+}
+
+.imageme{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.clipit{
+    width: 90px;
+    clip-path: circle(40px at center);
+}
+
+.imageann p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 70%;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    
+    
+}
+
+.mee{
+    padding: 0 50px;
+    
+}
+
+
+/*.ann{
+    background-color: red;
+}*/
+
+
+/*toggle menu for small screen*/
+
+@media screen and ( max-width: 992px ){
+
+    .nav__bar_container{
+        padding: 0 60px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+
+}
+#grace{
+    background: #181719;
+}
+
+.nav__menu{
+  /*  height: 400px;*/
+  height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #181719;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.nav__menu.active{
+    height: 450px;
+}
+
+.nav__menu .nav_item{
+display: block;
+width: fit-content;
+margin: 80px auto 0 auto ;
+text-align: center;
+transition: 0.5s;
+opacity: 0;
+
+}
+
+.nav__menu.active .nav_item{
+    opacity: 1;
+}
+
+.nav__menu .nav_item li a{
+    margin-bottom: 16px;
+}
+
+
+
+.hamburger.is-active .line:nth-child(2){
+    opacity: 0;
+    }
+    
+.hamburger.is-active .line:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        }
+        
+.hamburger.is-active .line:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+            }
+
+
+
+/*hero section*/
+
+
+
+.hero_container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+        flex-direction: column;
+        row-gap: 2rem;
+    
+}
+
+.left h3{
+    font-size: 2.2rem;
+    
+}
+
+.left p{
+    font-size: 1rem;
+    width: 60%;
+  
+}
+
+.left h6{
+    font-size: .8rem;
+}
+.imageus .imageit{
+    width: 100%;
+    height: 80%;
+  
+}
+
+}
+
+
+
