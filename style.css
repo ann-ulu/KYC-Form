@@ -166,13 +166,13 @@ img{
 #hero{
     background-color: white;
     max-width: 1400px;
-    margin: 9rem auto;
+    margin: 0 auto;
     padding: 0 50px;
     
 }
 
 .hero2{
-    
+    margin-top: 9rem;
     margin-left: 1rem;
     max-width:650px;
   
@@ -188,6 +188,7 @@ column-gap: 10px;
 
 .hero1{
  width: 70%;
+ margin-top: 8rem;
  /* background-color: red;*/
 }
 
@@ -891,45 +892,47 @@ opacity: 0;
     font-size: .9rem;
 }
 
-.hero_section{
-    flex-direction: column;
-    row-gap: 80px;
-}
 
-.hero1{
-    width: 100%;
-}
-
-.hero2{
-    margin-left: 0;
-}
-
-.hero1 h2{
-    font-size: 2.3rem;
-}
-
-.hero1 p{
-    width: 100%;
-}
 
 
 /*hero section*/
 #hero{
     padding: 0 20px;
-    margin-top: 5.5rem;
+   /* margin-top: 5.5rem;*/
    } 
 
-.hero_section{
-    column-gap: 0;
-}
+
+
  .hero1 h2{
     font-size:2.5rem;
     width: 100%;
     margin-top: 2rem;
  }
 
+ .hero_section{
+    flex-direction: column;
+    row-gap: 80px;
+    column-gap: 0;
+}
+
+.hero1{
+    width: 100%;
+    margin-top: 5.5rem;
+}
+
+.hero2{
+    margin-left: 0;
+    margin-top: 0;
+    
+}
+
+
+
+
+
  .hero1 p{
     font-size: 1rem;
+    width: 100%;
  }
 .button1{
     padding: .6rem 1.1rem;
