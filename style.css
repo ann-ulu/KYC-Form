@@ -435,7 +435,7 @@ input {
         margin: 0 auto;
         padding: 0 50px;
         z-index: 2;
-       overflow-y: scroll;
+      
        overflow-x: hidden;
      /*   background-color: pink;*/
     }
@@ -990,7 +990,6 @@ input::placeholder {
 
 .bio_section{
     padding: 0 30px;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 
