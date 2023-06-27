@@ -7,9 +7,9 @@
 }
 
 body{
-    background-color: #181719;
-    color:white ;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color:black;
+    font-family: 'Roboto', sans-serif;
     
     
 }
@@ -20,23 +20,28 @@ img{
 }
 
 .nav__bar{
-    background-color: #181719;
+    background-color: #ffffff;
 }
 
 .nav__bar_container{
-    position: sticky;
+    position: fixed;
+    background-color:rgb(255, 255, 255);
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   padding:0 90px ;
+  z-index: 999;
 }
 
 .logo{
     padding: .5rem 1rem;
-font-size:  0.875rem ;
-border: 1px solid;
+
+}
+
+.logo img{
+    width: 45px;
 }
 
 .hamburger{
@@ -50,11 +55,12 @@ border: 1px solid;
 
 .nav_item li a{
     display: block;
-    color: white;
+    color: rgb(4, 90, 6);
     font-size: 1rem;
-    padding: .5rem 1.2rem;
-    font-weight: 500;
+    padding: .5rem 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+   
 }
 
 
@@ -63,7 +69,8 @@ border: 1px solid;
         content: '';
         width: 0;
         height: 3px;
-        background-color: white;
+        background-color: rgb(5, 67, 3);
+       
         margin: auto;
     display: block;
     }
@@ -73,179 +80,736 @@ border: 1px solid;
         transition: width 0.3s linear;
     }
 
-/*hero section*/
+/*pop up*/
 
-.hero_section{
-    background-color: #181719;
-    margin-top: 5rem;
-}
-
-.work{
-  /* position: relative;*/
-}
-
-.hero_container{
-    
+.rough{
     max-width: 1400px;
     margin: 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px; 
-}
-
-.imageit{
-    width: 100%;
    
+
 }
 
-
-
-.left h3{
-    font-size: 3rem;
-    font-weight: 500px;
-    font-family: 'Lora', serif;
-    padding: 0 1rem 2rem 0;
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+   
+    padding: 0 40px;
+    
 }
 
-.left p{
-    font-size: 1.3rem;
-    width: 60%;
-  text-align: left;
-  padding-bottom: 2.5rem;
+#popup {
+    position: fixed;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    background-color: #f2fcf4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    z-index: 1000;
+    display: none;
+    max-width: 90%;
+    width: 600px;
 }
 
-.left h6{
-    font-size: 1rem;
-}
-
-.right{
-    position: relative;
-}
-
-
-/*small section*/
-
-.give{
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.mee{
-    padding: 0 50px;
-}
-
-.groupit{
-    background-color: #181719;
-    ;
-    width: fit-content; 
-   position: absolute;
-    right: 160px;
-    top: 600px;
- 
-  
-}
-
-.imageme{
+.pop_head{
     display: flex;
     align-items: center;
-    padding: .5rem 1rem;
-}
-
-.clipit{
-    width: 90px;
-    clip-path: circle(40px at center);
-}
-
-.imageann p{
-    font-size: 1.3rem;
-    font-weight: 700;
-    width: 70%;
-    padding-bottom: .2rem;
-    padding-left: 1rem;
-    
-    
-}
-
-.ptag h6{
+    justify-content: center;
     margin-bottom: .5rem;
 }
 
+.pop_head img{
+    width: 60px;
+}
 
-.foot{
-    margin-top: 15rem;
+#popup p{
+    margin-bottom: .5rem;
+}
+
+#popup h2 {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    
+   
+}
+
+.buttonuse{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.best{
-    opacity: 0;
-    transition: all 1s;
-     transform: translateY(100px);
-  }
+#acceptButton {
+    padding: .5rem 1rem;
+    width: 50%;
+   background-color: rgb(3, 94, 11);
+   color: rgb(255, 255, 255);
+   border: none;
+   margin-top: .5rem;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 1.1rem;
+}
+
+
+/*hero section*/
+
+#hero{
+    background-color: white;
+    max-width: 1400px;
+    margin: 9rem auto;
+    padding: 0 50px;
+    
+}
+
+.hero2{
+    
+    margin-left: 1rem;
+    max-width:650px;
   
-  @media(prefers-reduced-motion){
-      .hidden{
-          transition: none;
-      }
+}
+.hero_section{
+    
+display: flex;
+align-items: flex-start;
+justify-items: space-between;
+column-gap: 10px;
+
+}
+
+.hero1{
+ width: 70%;
+ /* background-color: red;*/
+}
+
+.hero1 p{
+    width: 70%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+   
+    
   }
+
+  .cust{
+    color: green;
+    font-weight: 700;
+  }
+
+.hero1 h2{
+    margin-top: 3rem;
+    font-size: 3.2rem;
+    font-family: 'Lora', serif;
+    padding: 2rem 2rem 1rem 0;
+    color: rgb(4, 102, 4);
+}
+
+.hero2 img{
   
-  .show{
-      opacity: 1;
-     transform: translateY(0);
-  }
-
-
-
-@media screen and ( max-width: 1281px ){
    
-   
-    .groupit{
-        right: 120px;
-        top: 550px;
-    }
+}
 
-    .left h3{
-        font-size: 2.2rem;
-    }
-
-    .left p{
-        font-size: 1.3rem;
-    }
-
-    .imageann p{
-        font-size: 1.1rem;
-    }
+.button1{
+    padding: 1rem 2rem;
+    background-color: rgb(4, 102, 4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
 
     
+ .button1 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*policy section*/
+
+.policy{
+    background-color: white;
+    margin-top: 8rem;
+}
+
+.policy_section{
+padding: 0 50px;
+max-width: 1400px;
+margin: 0 auto;
+margin-bottom: 0;
 
 
 }
 
-@media screen and ( max-width: 1025px ){
-    .groupit{
-        right: 70px;
-        top: 480px;
-    }
-    
-
+.policy_content{
+  /*  background-color: rgb(235, 251, 235);*/
+    background-color: rgb(242, 251, 242);
+    border-radius: 20px;
+    box-shadow: 
+    5px 5px 5px rgba(226, 225, 225, 0.4), /* Top left corner */
+    -5px 5px 5px rgba(233, 231, 231, 0.4), /* Top right corner */
+    -5px -5px 5px rgba(234, 233, 233, 0.4), /* Bottom right corner */
+    5px -5px 5px rgba(231, 230, 230, 0.4); /* Bottom left corner */
 }
 
 
 
-/*.ann{
-    background-color: red;
+.policy_heading {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.policy_heading h2{
+    padding: 2rem 2rem 2rem 2rem;
+    color: rgb(4, 102, 4);
+    font-size: 2rem;
+}
+
+.form1{
+    padding: 0 3rem;
+    
+    
+}
+
+.form1 p{
+    text-align: justify;
+    font-size: 1.03rem;
+    margin-bottom: 2rem;
+    
+    
+}
+
+#personalInfoForm input{
+    padding: 13px 10px 1px 10px;
+    background-color: transparent;
+    width: 30%;
+    border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+    font-size: 1.2rem; /* Set the desired font size */
+    text-align: center;
+  
+}
+
+
+
+
+
+/* Prevent autofill text color change */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: black !important;
+    -webkit-background-color:  rgb(242, 251, 242)!important;
+
+}
+
+/* Remove autofill background color 
+#personalInfoForm input:-webkit-autofill {
+    -webkit-box-shadow: none!important;
+    background-color:  rgb(242, 251, 242)!important;
+}
+
+/*input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }*/
 
 
-/*toggle menu for small screen*/
+input::placeholder {
+font-size: 1.2rem;
+font-style: italic;
+color: rgb(163, 163, 163);
+text-align: center;
+
+}
+
+#dataRequestsList {
+    list-style-type: none;
+  counter-reset: alphabet-counter;
+  }
+
+
+  #dataRequestsList li::before {
+    content: counter(alphabet-counter, lower-alpha) ") ";
+    counter-increment: alphabet-counter;
+ 
+  }
+
+  .pit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+   
+  }
+
+  #when input{
+   
+   padding: 3rem 2rem .5rem 2rem; 
+   width: 70%;
+    
+  }
+
+  #first{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background-color: rgb(4, 102, 4);
+    border: none;
+    margin: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+  }
+  #accept{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden-text{
+    display: none;
+  }
+
+  .use{
+    margin-bottom: 0;
+    display: inline;
+  }
+
+
+  .read-more-btn{
+display: inline;
+background-color: transparent;
+border: none;
+color: rgb(255, 0, 0);
+font-weight: 700;
+cursor: pointer;
+font-size: 1.1rem;
+font-style: italic;
+  }
+#first a{
+    color: white;
+    text-decoration: none;
+}
+  
+ 
+  /*customer bio*/
+
+  /*.hidden {
+    display: none;
+  }*/
+input {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 1px solid;
+    width: 50%;
+   /* background-color:rgb(242, 251, 242) ;*/
+    font-size: 1.2rem; /* Set the desired font size */
+    text-align: left;
+    }
+
+    input:focus{
+        outline: 0;
+    }
+
+    .bio_section {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 50px;
+        z-index: 2;
+       overflow: hidden;
+     /*   background-color: pink;*/
+    }
+    
+   
+.bio1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .bio1 h2{
+        margin-top: 5rem;
+        color: rgb(4, 102, 4);
+        margin-top: 7rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .details{
+        font-size: 1.2rem;
+        color: rgb(4, 102, 4);
+        font-style: italic;
+        padding-bottom: 2rem;
+    }
+
+    .read{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+column-gap: 70px;
+    }
+    input{
+        width: 100%;
+        background-color:rgb(255, 255, 255) ;
+    }
+
+    .them h2{
+        font-size: 1.2rem;
+        color: rgb(4, 102, 4);
+        padding-bottom: .7rem;
+    }
+    
+    .one_sec{
+        margin-bottom: 2rem;
+    }
+
+    .two_sec{
+        margin-bottom: 2rem;
+    }
+
+    .three_sec {
+        margin-bottom: 2rem;
+    }
+.four_sec{
+    margin-bottom: 2rem;
+}
+
+.five_sec{
+    margin-bottom: 2rem;
+}
+.six_sec{
+    margin-bottom: 2rem;
+}
+
+/*first radio button*/
+/* The container */
+.six_sec .container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #abaaaa;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a green background */
+  .container1 input:checked ~ .checkmark1 {
+    background-color:  rgb(4, 102, 4);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container1 input:checked ~ .checkmark1:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container1 .checkmark1:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+/*second radio button*/
+/* The container */
+ .container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #abaaaa;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container2:hover input ~ .checkmark2 {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a green background */
+  .container2 input:checked ~ .checkmark2 {
+    background-color:  rgb(4, 102, 4);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container2 input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container2 .checkmark2:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*checkbox*/
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #abaaaa;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(4, 102, 4);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+ 
+.button2 , .button3{
+    background-color: rgb(4, 102, 4);
+    padding: 1rem 5rem;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 10px;   
+}
+
+.set{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+#formbody{
+   
+  background-color: rgb(216, 245, 216);
+  
+/* background-image: url(images/logo\ sbc.png);
+background-size: contain;
+background-repeat: no-repeat;
+backdrop-filter: blur(10px);
+background-position: center;*/
+
+}
+
+.button4{
+    background-color: red;
+    color: white;
+    padding: 1rem 5rem;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 10px;  
+}
+
+.button4 a{
+text-decoration: none;
+color: white;
+
+
+}
+
+
+.button2{
+    cursor: pointer;
+}
+
+
+    
+
+/* footer*/
+  footer{
+    
+    margin-top: 8rem;
+    background-color: #1b3f03;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .foot{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .foot p{
+    color: white;
+    padding: 6rem;
+    text-align: center;
+  }
+
+  
+
+
+
+
+
+  @media screen and ( max-width: 1025px ){
+.hero1 h2{
+    font-size: 2.2rem;
+}
+.hero1 p{
+    font-size: 1rem;
+}
+
+
+
+  }
+
+
+
 
 @media screen and ( max-width: 992px ){
 
     .nav__bar_container{
         padding: 0 30px;
+        background-color: rgb(235, 251, 235);
     }
 
     .hamburger{
@@ -256,12 +820,13 @@ border: 1px solid;
 .hamburger .line{
     width: 30px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     margin: 6px 0;
 
 }
 #grace{
-    background: #181719;
+    background:  #ffffff;
+    background-color: rgb(235, 251, 235)
 }
 
 .nav__menu{
@@ -272,13 +837,15 @@ border: 1px solid;
     left: 0;
     right: 0;
     width: 100%;
-    background: #181719;
+    background-color: rgb(235, 251, 235);
+    
     transition: 0.2s;
  /*   overflow: hidden;*/
 }
 
 .nav__menu.active{
     height: 450px;
+    background-color: rgb(235, 251, 235);
 }
 
 .nav__menu .nav_item{
@@ -314,86 +881,186 @@ opacity: 0;
             }
 
 
+/*popup*/
+#popup{
+    width: 80%;
+    height: auto;
+}
+
+#popup p{
+    font-size: .9rem;
+}
+
+.hero_section{
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.hero1{
+    width: 100%;
+}
+
+.hero2{
+    margin-left: 0;
+}
+
+.hero1 h2{
+    font-size: 2.3rem;
+}
+
+.hero1 p{
+    width: 100%;
+}
+
 
 /*hero section*/
+#hero{
+    padding: 0 20px;
+    margin-top: 5.5rem;
+   } 
 
-
-
-.hero_container{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-        flex-direction: column;
-        row-gap: 2rem;
-        padding: 0 20px;
-    
+.hero_section{
+    column-gap: 0;
 }
+ .hero1 h2{
+    font-size:2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+ }
 
-.left h3{
-    font-size: 2.2rem;
-    
-}
-
-.left p{
+ .hero1 p{
     font-size: 1rem;
-    width: 70%;
-  
+ }
+.button1{
+    padding: .6rem 1.1rem;
 }
 
-.left h6{
+
+
+
+
+
+/*policy for small screen size*/
+.policy_section{
+    padding: 0 20px;
+}
+.policy_heading h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form1{
+    padding: 0 .8rem;
+}
+
+input{
+    width: 50%;
+}
+
+input::placeholder {
+    font-size: .8rem;
+  
+    }
+
+    .pit{
+        grid-template-columns: auto;
+    }
+
+
+
+/*form section*/
+
+
+.bio_section{
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.read{
+    grid-template-columns: auto;
+    column-gap: 0;
+    
+}
+
+.bio1 h2{
+    text-align: center;
+}
+.details{
+    text-align: center;
+}
+
+#bio-form input{
+    width: 100%;
+    
+}
+
+.them h2{
+    font-size: 1rem;
+}
+
+.edit{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+.button2 , .button3{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.button4{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+
+
+/*footer*/
+
+.footer{
+    margin-top: 4rem;
+}
+
+.foot p{
     font-size: .8rem;
 }
-.imageus .imageit{
-    width: 100%;
-    height: 80%;
+
+}
+
+
+
+
+@media  screen and (max-width: 415px) {
+    #popup p{
+        margin-bottom: .3rem;
+        font-size: .83rem;
+    }
   
+  
+    .hero{
+    padding: 0 20px;
+    margin-top: 5rem;
+   } 
+
+.hero_section{
+    column-gap: 0;
 }
 
-.groupit{
-    top: 900px;
-right: 100px;
+ .hero1 h2{
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+ }
+
+ .hero1 p{
+    font-size: 1rem;
+ }
+.button1{
+    padding: .4rem .8rem;
 }
+ 
+    
 
-}
-
-
-@media  screen and (max-width: 769px){
-    .groupit{
-        top: 820px;
-        right: 100px;
-    }
-
-}
-
-@media  screen and (max-width: 415px){
-    .groupit{
-        top: 570px;
-        right: 10px;
-    }
-
-    #feed{
-        width: 80%;
-    }
-
-    .imageann p{
-        font-size: .5rem;
-    }
-
-    #prg{
-        width: 100%;
-    }
-
-    .left h3{
-        font-size: 1.5rem;
-    }
-
-    .ptag p{
-        font-size: .7rem;
-    }
-
-    .foot p{
-        font-size: .7rem;
-    }
 }
 
 

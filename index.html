@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>interior consultant</title>
+    <title>KYC Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +11,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+
 </head>  
 <body>
+  
     <nav class="nav__bar">
 <div class="nav__bar_container">
-    <div class="logo">
-        <h6>THIS INTERIOR</h6>
+    <div class="logo"><a href="#hero"><img src="images/logo sbc.png" alt=""></a>
+        
     </div>
 <div class="hamburger">
    <div class="line"></div> 
@@ -30,52 +39,135 @@
 
 <div class="nav__menu" id="grace">
     <ul class="nav_item">
-        <li><a href="#" class="ann">Home</a></li>
-        <li><a href="#">Collection</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#hero" class="ann">Home</a></li>
+        <li><a href="#policies">policy</a></li>
+        <li><a href="#">form</a></li>
+        <li><a href="#cont">Contact</a></li>
     </ul>
 </div>
 </div>
     </nav>
 
-    <div class="hero_section">
-        <div class="work">
-        <div class="hero_container">
-            <div class="left">
-                <h3>Modern interior</h3>
-                <p id="prg">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-            <h6>Read more</h6>
-            </div>
-            <div class="right best">
-               <div class="imageus"><img src="images/photo1.png" class="imageit" alt="">  </div>                
-                </div>
+    <!--popup-->
+<div class="rough">
+    <div id="overlay"></div>
+    <div id="popup">
+        <div class="pop_head"><img src="images/logo sbc.png" alt=""><h2>Welcome!</h2></div>
+        <p>The purpose of this KYC Form is to collect relevant information and documentation from our valued customers in compliance with regulatory requirements. As part of our commitment to maintaining a secure and trustworthy business relationship, the KYC process enables us to verify the identity and update our customers' information with the company's records.</p>
+        <p>Your cooperation in providing accurate and complete information is vital to ensure that we can fulfill our primary goal of satisfying you, our customers, while protecting the interests of both our customers and our organization.</p>
+        <p>Please read the instructions carefully and provide all the requested information accurately. Failure to provide complete and accurate information may result in delays or complications in processing your request, thus straining our business relationship.</p>
+        <p>We assure you that all information provided will be treated with utmost confidentiality and in accordance with our privacy policies and applicable data protection regulations.</p>
+        <p>Thank you for your unwavering cooperation and trust in our organization.</p>
+       <div class="buttonuse"> <button id="acceptButton">Proceed</button></div>
+    </div>
+</div>
+
+   
+ <div class="hero_section" >
+
+        </div>
+   
+
+        <!--hero section-->
+
+        <div class="hero6" id="hero">
+            <div class="hero_section">
+<div class="hero1" >
+    <h2>Know Your Customer</h2>
+
+        <p>As part of
+            our commitment to maintaining a secure and trustworthy business relationship, The <span class="cust">[company name]</span> 
+            KYC process enables us to verify the identity and update our customers information
+            with the company’s records</p>
+        <button class="button1" > <a href="#policies" class="lost">Get Started</a></button>
+</div>
+
+<div class="hero2">
+    <img src="images/undraw_checking_boxes_re_9h8m.svg" alt="">
+</div>
+
+
+
             </div>
         </div>
-    </div>
-                <!--group-->
-                <div class="give">
-                    <div class="mee">
-                <div class="groupit best" id="feed"> 
-              <!--group1-->  <div class="imageme">
-                        <div class="bar">
-                    <img src="images/photo2.png" class="clipit" alt=""></div>
-                              <div class="ptag"> <h6>Aliza Webber</h6><p>Interior designer</p></div>  </div>
-                 <!--group2-->  
-                                 <div class="imageann"><p>Designed in 2020 by Aliza Webber</p></div>     
-                                  <!--group2 end-->  
-                                </div>
-                            </div>
-                        </div>
-                                 
-              
-
-            
+        
       
-<footer>
+<!--policy section-->
+
+<div class="policy" id="policies">
+    <div class="policy_section">
+
+<div class="policy_content">
+    <div class="policy_heading">
+<h2 class="hann">Customer Personal Data consent</h2></div>
+
+<form id="personalInfoForm" class="form1">
+    <p class="use">To be able to update my personal information as a customer of [company name]  Company Limited (“[company name]”),  I <br><input type="text" id="username" class="mee" required placeholder="Enter your full name"> 
+        as a representative of <input type="text" id="vendor" class="mee" required placeholder="Enter vendor's name">  understand that [company name] may collect, process, store and use my personal data for the performance of contract(s) signed by [Vendor’s name] with [company name], and for other lawful purposes including but not limited to payment for services rendered etc. The data shall be accessed in line with [company name]’s Data Protection Policy and the Nigeria Data Protection Regulation, 2019 (NDPR)</p><div class="hidden-text">
+    <p >  The data so collected shall be in respect of the following: Billing Notification, Payment, Authentication and Confirm Delivery. I am also aware that the personal data required by [company name] for the purposes mentioned herein may include my name, email address, office address, phone number, and other related data.
+    
+
+    I am aware that [company name] may share my personal data with its affiliates, agents, regulatory authorities or third-party service providers for the purposes for which it is collected or in compliance with provisions of applicable laws. I am also aware that [company name] will retain the personal data as long as necessary for the purpose for which it is collected.</p>
+    
+<p>I am also aware that I have the rights to:</p>
+
+<p><ul id="dataRequestsList">
+    <li>Request for and access personal data collected and stored by [company name]</li>
+    <li>Withdraw consent at any time</li>
+    <li>Object to automated decision making</li>
+    <li>Request rectification and modification of my data kept by [company name]</li>
+    <li>Request for deletion of data</li>
+    <li>Be informed of and entitled to provide consent prior to the processing of data for purposes other than that for which the personal data were collected</li>
+    <li>Request the movement of my data by [company name] to third parties</li>
+    <li>Request that [company name] restricts its processing of my information</li>
+  </ul></p></div>
+
+  <button class="read-more-btn">.............Read More</button>
+
+
+  <p>I also confirm that I have read and understood the [company name] Privacy Notice. </p>
+
+  <p>In consideration of all the information stated herein that are within my knowledge, I hereby consent to the collection, processing, use and transfer of my personal data, within or outside Nigeria, for the purposes stated herein.</p>
+
+  <p class="pit" id="when"><input type="text" id="username" required placeholder="Enter your full name">
+
+    <input type="text" id="sign" class="mee" required placeholder="Enter your signature">
+
+    <input type="date" id="dateInput">
+
+    <input type="text" id="sign" required placeholder="Enter your address">
+
+</p>
+
+<div id="accept">
+    <button type="submit" id="first"><a href="form.html">Accept this policy to view form</a></button></div>
+
+</form>
+
+
+</div>
+
+
+    </div>
+</div>
+</div>
+
+
+<!--form section-->
+<div class="bio_section " id="reading" >
+    
+    <div class="bio1"><h2>Customer Bio-Data</h2> </div>
+    <P class="details">Please provide your details as accurately as possible.</P>
+    <div class="bio-data hidden" id="nextSection">
+        </div>
+        </div>
+
+
+
+<footer id="cont">
     <div class="foot">
         <p>
-            created by annulu - devChallenges.io
+            &copy; 2023 [company name]  Company. All rights reserved.
         </p>
     </div>
 </footer>

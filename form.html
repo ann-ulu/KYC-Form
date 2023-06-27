@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+
+</head>  
+<body id="formbody">
+  
+    <nav class="nav__bar">
+<div class="nav__bar_container">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo sbc.png" alt=""></a>  
+    </div>
+<div class="hamburger">
+   <div class="line"></div> 
+    <div class="line"></div>
+    <div class="line"></div>
+
+   <!-- <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>-->
+</div>
+
+<div class="nav__menu" id="grace">
+    <ul class="nav_item">
+        <li><a href="index.html#hero" class="ann">Home</a></li>
+        <li><a href="index.html#policies">policy</a></li>
+        <li><a href="reading">form</a></li>
+        <li><a href="index.html#cont">Contact</a></li>
+    </ul>
+</div>
+</div>
+    </nav>
+
+    
+
+
+<!--customer bio-data section-->
+<!--div  id="nextSection" class="hidden">-->
+
+<div class="bio_section " id="reading" >
+    
+    <div class="bio1"><h2>Customer Bio-Data</h2> </div>
+    <P class="details">Please provide your details as accurately as possible.</P>
+    <div class="bio-data hidden" id="nextSection">
+      
+        <form id="bio-form" class="form2">
+    
+    
+        <div class="one_sec">  
+            <div class="them"><h2>Customer Code</h2></div>
+    
+            <div class="read">
+                <div class="edit">
+         <label for="name">Nav Code</label>
+               <input id="customerCode" name="name" type="text" required>
+                 </div>
+        <div class="edit">
+                <label for="name" id="next">SAP Code</label>
+                <input id="sapCustomerCode"  name="name" type="text" required>
+            </div>
+            </div>
+            </div>
+    
+    
+    <div class="two_sec">  
+        <div class="them"><h2>Customer Info</h2></div>
+        <div class="read">
+            <div class="edit">
+        <label for="name">First Name</label>
+            <input id="firstName"  name="firstName" type="text" required>
+        </div>
+    <div class="edit">
+            <label for="name">Last Name</label>
+            <input id="lastName"  name="lastName" type="text" required>
+        </div>
+    <div class="edit">
+        <label for="name">Other Name</label>
+        <input id="otherName"  name="otherName" type="text" required>
+    </div>
+    
+    <div class="edit">
+        <label for="name">Email</label>
+            <input id="email"  name="name" type="email" required>
+            </div>
+    <div class="edit">
+    <label for="name">Phone number(s)</label>
+            <input id="phoneNumber1"  name="phoneNumber1" type="text" required>
+           
+            <input id="phoneNumber2"  name="phoneNumber2" type="text" required>
+            </div>
+    </div class="edit">
+    
+    <div>
+        </div>
+    </div>
+    
+        
+    
+    
+                <div class="three_sec">  
+                    <div class="them"><h2>Business Info</h2></div>
+                    <div class="read">
+                    <div class="edit">
+                    <label for="name">Business Name</label>
+                        <input id="businessName"  name="businessName" type="text" required>
+                    </div class="edit">
+                    <div class="edit">
+                        <label for="name">Email</label>
+                            <input id="email"  name="email" type="text" required>
+                            </div>
+                      <div class="edit"> 
+                        <label for="name">Business Address</label>
+                        <input id="businessAddress"  name="businessAddress" type="text" required>
+                    </div>
+    
+                    <div class="edit"> 
+                        <label for="name">Registered Company (RC) Number</label>
+                        <input id="companyRegNo"  name="companyRegNo" type="text" required>
+                    </div>
+    
+                    <div class="edit"> 
+                        <label for="name">Corporate Affairs Commission (CAC) Number</label>
+                        <input id="cac"  name="cac" type="text" required>
+                    </div>
+    
+                    <div class="edit"> 
+                        <label for="name">Tax Identification Number (TIN)</label>
+                        <input id="taxNumber"  name="taxNumber" type="text" required>
+                    </div>
+    
+                        <div class="edit">
+                        <label for="name">Business Phone number(s)</label>
+                            <input id="businessPhoneNumber1"  name="businessPhoneNumber1" type="text" required>
+                            <input id="businessPhoneNumber2"  name="businessPhoneNumber2" type="text" required>
+                    
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="four_sec">  
+                        <div class="them"><h2>Main warehouse address</h2></div>
+                
+                        <div class="read">
+                            <div class="edit">
+                        <label for="name">Address</label>
+                            <input id="mainWarehouseAddress" name="mainWarehouseAddress" type="text" required>
+                        </div>
+                    <div class="edit">
+                            <label for="name" id="next">State</label>
+                            <input id="mainWarehouseState"  name="mainWarehouseState" type="text" required>
+                        </div>
+    
+                        <div class="edit">
+                            <label for="name" id="next">LGA</label>
+                            <input id="mainWarehouseLga"  name="mainWarehouseLga" type="text" required>
+                        </div>
+                        </div>
+                        </div>
+    
+    
+    <!--radio buttons-->
+    <div class="six_sec">
+    <div class="them"><h2>To the number provided above, would like to receive billing notifications, confirm load delivery, and payment authentication notifications. </h2></div>
+    <label class="container1">Yes
+      <input id="isNotification" type="radio" checked="checked" name="radio">
+      <span class="checkmark1"></span>
+    </label>
+    <label class="container1">No
+      <input id="alternativeNotifications" type="radio" name="radio">
+      <span class="checkmark1"></span>
+    </label>
+    
+    </div>
+    
+    
+                        <!--checkboxes-->
+                        <div class="five_sec">
+                            
+                      <div class="them">  <h2>Select your notification preference(s)</h2></div>
+                        <label class="container">SMS
+                          <input id="isNotification" type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Email
+                          <input id="alternativeNotifications" type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                       
+                    </div>
+    
+                    <div class="five_sec">
+                            
+                        <div class="them">  <h2>Please indicate your preferred language for communication and SMS notifications from the options below.</h2></div>
+                        <label class="container2">English
+                            <input id="preferredLanguage" type="radio" checked="check" name="radio1">
+                            <span class="checkmark2"></span>
+                          </label>
+                          <label class="container2">Yoruba
+                            <input id="preferredLanguage" type="radio" name="radio1">
+                            <span class="checkmark2"></span>
+                          </label>
+                          <label class="container2">Igbo
+                            <input id="preferredLanguage" type="radio" name="radio1">
+                            <span class="checkmark2"></span>
+                          </label>
+                          <label class="container2">Hausa
+                            <input id="preferredLanguage" type="radio" name="radio1">
+                            <span class="checkmark2"></span>
+                          </label>
+                          <label class="container2">Pidgin
+                            <input id="preferredLanguage" type="radio" name="radio1">
+                            <span class="checkmark2"></span>
+                          </label>
+                            
+                            
+                      </div>
+    
+    
+    <div class="set">
+      <div>  <button class="button4"><a href="index.html">Go back</a></button></div>
+      <div>  <button type="submit" class="button2">Submit Here</button></div>
+    </div>
+    
+    
+    </form>
+    </div>
+    </div>
+ 
+    <footer id="cont">
+        <div class="foot">
+            <p>
+                &copy; 2023 SevenUp Bottling Company. All rights reserved.
+            </p>
+        </div>
+    </footer>
+        
+</body>
+
+
+<script src="main.js"></script>
+</body>
+
+
+</html>
