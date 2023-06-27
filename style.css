@@ -24,10 +24,12 @@ img{
 }
 
 .nav__bar{
-    background-color: #ffffff;
+    background-color: #262323;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.nav__bar_container{
+/*.nav__bar_container{
     position: fixed;
     background-color:rgb(255, 255, 255);
     width: 100%;
@@ -37,6 +39,21 @@ img{
     justify-content: space-between;
   padding:0 90px ;
   z-index: 999;
+  
+}*/
+
+.nav__bar_container{
+    position: fixed;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding:0 30px;
+  z-index: 999;
+  max-width: 1400px;
+  margin: 0 auto;
   
 }
 
