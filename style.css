@@ -4,12 +4,16 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    overflow-y: scroll;
 }
 
 body{
     background-color: #ffffff;
     color:black;
     font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+
+   
     
     
 }
@@ -188,7 +192,7 @@ column-gap: 10px;
 
 .hero1{
  width: 70%;
- margin-top: 4rem;
+ margin-top: 0;
  /* background-color: red;*/
 }
 
@@ -293,7 +297,7 @@ justify-content: center;
 #personalInfoForm input{
     padding: 13px 10px 1px 10px;
     background-color: transparent;
-    width: 100%;
+    width: 30%;
     border: none;
   border-bottom: 2px solid #000;
   outline: none;
@@ -431,7 +435,8 @@ input {
         margin: 0 auto;
         padding: 0 50px;
         z-index: 2;
-       overflow: hidden;
+       overflow-y: scroll;
+       overflow-x: hidden;
      /*   background-color: pink;*/
     }
     
@@ -944,6 +949,15 @@ opacity: 0;
 
 
 /*policy for small screen size*/
+#personalInfoForm input{
+    width: 100%;
+
+}
+
+
+#text p{
+    text-align: center;
+}
 .policy_section{
     padding: 0 20px;
 }
@@ -976,7 +990,8 @@ input::placeholder {
 
 .bio_section{
     padding: 0 30px;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .read{
