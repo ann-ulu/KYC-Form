@@ -180,7 +180,7 @@ img{
 .hero_section{
     
 display: flex;
-align-items: flex-start;
+align-items: center;
 justify-items: space-between;
 column-gap: 10px;
 
@@ -188,7 +188,7 @@ column-gap: 10px;
 
 .hero1{
  width: 70%;
- margin-top: 8rem;
+ margin-top: 4rem;
  /* background-color: red;*/
 }
 
@@ -923,7 +923,7 @@ opacity: 0;
 .hero2{
     margin-left: 0;
     margin-top: 0;
-    
+
 }
 
 
